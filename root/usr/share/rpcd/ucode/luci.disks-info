@@ -223,7 +223,7 @@ function parseUbinfoOutput() {
 					deviceInfo.totalLebs = m[1];
 				} else if((m = match(line, /^Amount of available logical eraseblocks:\s+(.+)$/))) {
 					deviceInfo.availableLebs = m[1];
-				} else if((m = match(line, /^Maximum count of volumes\s+(.+)$/))) {
+				} else if((m = match(line, /^Maximum count of volumes:?\s+(.+)$/))) {
 					deviceInfo.maxVolumes = m[1];
 				} else if((m = match(line, /^Count of bad physical eraseblocks:\s+(.+)$/))) {
 					deviceInfo.badPebs = m[1];
